@@ -1,0 +1,11 @@
+* {
+    font-family: 'Arial', Times, serif;
+}
+li {
+    padding-bottom: 0.45em;
+}
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
