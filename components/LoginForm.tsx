@@ -48,6 +48,7 @@ export default function LoginForm () : React.ReactElement {
                     <input 
                         className="w-[260px] lg:w-[400px] lg:h-[50px] rounded-md shadow-md py-2 px-4 dark:text-white"
                         type="text"
+                        id="kayttajatunnus"
                         {...register("kayttajatunnus", {required : "Anna kelvollinen sähköposti"})} />
                     { (errors.kayttajatunnus) ?
                         <p className="error text-red-600 text-sm">{errors.kayttajatunnus.message}</p>
@@ -58,6 +59,7 @@ export default function LoginForm () : React.ReactElement {
                     <label className="block text-xl dark:text-white text-musta font-semibold">Salasana</label>
                     <input 
                         type="password"
+                        id="salasana"
                         autoComplete='currentPassword'
                         className="w-[260px] lg:w-[400px] lg:h-[50px] rounded-md shadow-md py-2 px-4 dark:text-white"
                         {...register("salasana", {required : "Anna kelvollinen salasana", minLength: 1})}/>
